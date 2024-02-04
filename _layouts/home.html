@@ -4,6 +4,11 @@ layout: page
 
 {{ content }}
 
+<!-- Add your custom text block here -->
+<div class="custom-text">
+  <p>This is my custom text that will appear above the blog posts list. You can customize this paragraph to say whatever you like.</p>
+</div>
+
 {% assign posts = paginator.posts | default: site.posts %}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
